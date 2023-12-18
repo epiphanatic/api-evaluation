@@ -34,9 +34,21 @@ Given that the evaluation asks for an application to process a static API and no
 
 ### Making a request
 
-<list the endpoints>
+The API can be accessed at the following endpoint which meets the specifications outlined in `openapi-companies.yaml`:
 
-###
+```
+https://us-central1-mwnz-evaluation.cloudfunctions.net/v1
+```
+
+The API requires a company ID to be passed in the URL. For example, to get the data for company 1, make a request to the following URL:
+
+```
+https://us-central1-mwnz-evaluation.cloudfunctions.net/v1?id=1
+```
+
+If the id is not set, is in some other format (eg "1"), or is not within the range of company ids (1-2), then the API will return a 404 error in JSON format as outlined in the spec.
+
+If is properly set and is within the range of company ids (1-2) then the API will return the data for that company in JSON format as outlined in the spec.
 
 ## Testing
 
