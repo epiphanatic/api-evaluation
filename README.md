@@ -52,6 +52,8 @@ If is properly set and is within the range of company ids (1-2) then the API wil
 
 ## Testing
 
+To run the tests, run `npm run test` in a terminal in the directory where you have this source code stored.
+
 ## Deployment
 
 If not recreating the application then there is nothing to do here.
